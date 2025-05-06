@@ -84,7 +84,7 @@ with open("data/clean_comments.json", "w") as f:
 
 ### 2.3 Sentiment Analysis
 
-We applied **ADER** (Hutto & Gilbert, no date), a rule-based model optimized for social media. VADER returns four scores:
+We applied **ADER** (Hutto & Gilbert, 2014), a rule-based model optimized for social media. VADER returns four scores:
 * **neg/neu/pos**: Negative, neutral, positive proportions
 * **compound**: Aggregate score in [–1, 1]
 
@@ -219,9 +219,9 @@ This analysis of 1,000 YouTube comments on IShowSpeed’s Shanghai livestream re
 
 
 ## References
-* Hutto, C. J., & Gilbert, E. (no date). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text.
-Proceedings of the International AAAI Conference on Web and Social Media.
+* Hutto, C. J., & Gilbert, E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text.
+Proceedings of the International AAAI Conference on Web and Social Media. https://doi.org/10.1609/icwsm.v8i1.14550 
 * Cunha, A. A. L., Costa, M. C., & Pacheco, M. A. C. (2020). “Sentiment analysis of YouTube video comments using Deep Neural Networks.”
-In Advances in Artificial Intelligence: IEA/AIE 2020 International Workshops.
+In Advances in Artificial Intelligence: IEA/AIE 2020 International Workshops. http://dx.doi.org/10.1007/978-3-030-20912-4_51
 * Mikolov, T., et al. (2013). “Efficient Estimation of Word Representations in Vector Space.”
-arXiv:1301.3781.
+arXiv:1301.3781. https://doi.org/10.48550/arXiv.1301.3781
