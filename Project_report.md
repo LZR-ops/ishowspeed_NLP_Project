@@ -2,7 +2,7 @@
 
 **Author:** Zerong Lu  
 **Date:** April 29, 2025  
-
+**GitHub:** https://github.com/LZR-ops/ishowspeed_NLP_Project.git 
 ---
 
 ## Executive Summary
@@ -84,7 +84,7 @@ with open("data/clean_comments.json", "w") as f:
 
 ### 2.3 Sentiment Analysis
 
-We applied **ADER** (Hutto & Gilbert, 2014), a rule-based model optimized for social media. VADER returns four scores:
+This project applied **VADER** (Hutto & Gilbert, 2014), a rule-based model optimized for social media. VADER returns four scores:
 * **neg/neu/pos**: Negative, neutral, positive proportions
 * **compound**: Aggregate score in [–1, 1]
 
@@ -109,7 +109,7 @@ Comments were labeled as:
 
 ## 3. Descriptive Statistics
 
-Before diving into deeper analysis, we first summarize the basic characteristics of our comment corpus. We examine overall sentiment proportions, comment‐length variation, lexical diversity, and most frequent tokens.
+Before diving into deeper analysis, I first summarize the basic characteristics of our comment corpus. I also examine overall sentiment proportions, comment‐length variation, lexical diversity, and most frequent tokens.
 
 ### 3.1 Sentiment Distribution
 * **Neutral**: 559 (55.9%)
@@ -158,7 +158,7 @@ Before diving into deeper analysis, we first summarize the basic characteristics
 ---
 
 ## 4. Main Analysis & Methodology
-### 4.1 Why VADER?
+### 4.1 Why VADER
 * Designed for social media text (handles slang, emojis, punctuation)
 * Lightweight, rule-based, no GPU needed
 * Provides an interpretable compound score
@@ -204,7 +204,7 @@ This analysis of 1,000 YouTube comments on IShowSpeed’s Shanghai livestream re
 ### 6.2 Limitations
 1. **Timestamp Gaps:** The absence of reliable `time` metadata prevented any analysis of how sentiment evolved during the livestream. Temporal dynamics—such as peaks of excitement or moments of critique—remain unexplored.  
 2. **Model Constraints:** Although VADER excels with short, informal text, it can misinterpret sarcasm, irony, or culturally specific idioms, potentially skewing positive or negative counts.  
-3. **Sampling Bias:** Our dataset is limited to the first 1,000 most recent comments, which may overrepresent highly engaged fans and underrepresent later or less active viewers.  
+3. **Sampling Bias:** The dataset is limited to the first 1,000 most recent comments, which may overrepresent highly engaged fans and underrepresent later or less active viewers.  
 4. **Language Coverage:** Non-English comments were included in raw form but processed as English text, possibly diluting sentiment accuracy for multilingual or code-switched entries.
 
 

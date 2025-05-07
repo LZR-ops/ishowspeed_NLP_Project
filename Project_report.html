@@ -366,9 +366,9 @@ code {
     });
   </script>
 <h1 id="sentiment-snapshots-from-ishowspeeds-china-stream-comments">Sentiment Snapshots from IShowSpeed’s China Stream Comments</h1>
-<p><strong>Author:</strong> Zerong Lu<br>
-<strong>Date:</strong> April 29, 2025</p>
-<hr>
+<h2 id="author-zerong-ludate-april-29-2025github-httpsgithubcomlzr-opsishowspeednlpprojectgit"><strong>Author:</strong> Zerong Lu<br>
+<strong>Date:</strong> April 29, 2025<br>
+<strong>GitHub:</strong> https://github.com/LZR-ops/ishowspeed_NLP_Project.git</h2>
 <h2 id="executive-summary">Executive Summary</h2>
 <p>This study examines the emotional tenor and thematic focus of viewer comments on IShowSpeed’s YouTube livestream <em>“IRL Stream in China 🇨🇳”</em> (video ID: <code>fK85SQzm0Z0</code>). Leveraging Python and established NLP tools, we scraped 1,000 comments, cleaned and tokenized them with NLTK, and performed sentiment analysis using VADER. Results reveal that <strong>55.9%</strong> of comments were <strong>neutral</strong>, <strong>32.2%</strong> <strong>positive</strong>, and <strong>11.9%</strong> <strong>negative</strong>. The most frequent tokens—<strong>“china,” “speed,” “chinese,” “people,”</strong> and <strong>“streams”</strong>—highlight viewers’ focus on both the location and the creator. Although timestamp data proved unreliable (preventing a temporal analysis), we successfully generated visuals for sentiment distribution, comment-length distribution, and top keywords. These findings shed light on how a global online audience reacts to a major influencer’s portrayal of a foreign locale, offering insights for digital public sphere research, cross-cultural marketing, and influencer-driven soft power.</p>
 <hr>
@@ -435,7 +435,7 @@ nltk.download(<span class="hljs-string">"stopwords"</span>)
     json.dump(data, f, ensure_ascii=<span class="hljs-literal">False</span>, indent=<span class="hljs-number">2</span>)
 </div></code></pre>
 <h3 id="23-sentiment-analysis">2.3 Sentiment Analysis</h3>
-<p>We applied <strong>ADER</strong> (Hutto &amp; Gilbert, no date), a rule-based model optimized for social media. VADER returns four scores:</p>
+<p>This project applied <strong>VADER</strong> (Hutto &amp; Gilbert, 2014), a rule-based model optimized for social media. VADER returns four scores:</p>
 <ul>
 <li><strong>neg/neu/pos</strong>: Negative, neutral, positive proportions</li>
 <li><strong>compound</strong>: Aggregate score in [–1, 1]</li>
@@ -458,7 +458,7 @@ analyzer = SentimentIntensityAnalyzer()
 </ul>
 <hr>
 <h2 id="3-descriptive-statistics">3. Descriptive Statistics</h2>
-<p>Before diving into deeper analysis, we first summarize the basic characteristics of our comment corpus. We examine overall sentiment proportions, comment‐length variation, lexical diversity, and most frequent tokens.</p>
+<p>Before diving into deeper analysis, I first summarize the basic characteristics of our comment corpus. I also examine overall sentiment proportions, comment‐length variation, lexical diversity, and most frequent tokens.</p>
 <h3 id="31-sentiment-distribution">3.1 Sentiment Distribution</h3>
 <ul>
 <li><strong>Neutral</strong>: 559 (55.9%)</li>
@@ -555,7 +555,7 @@ analyzer = SentimentIntensityAnalyzer()
 </blockquote>
 <hr>
 <h2 id="4-main-analysis--methodology">4. Main Analysis &amp; Methodology</h2>
-<h3 id="41-why-vader">4.1 Why VADER?</h3>
+<h3 id="41-why-vader">4.1 Why VADER</h3>
 <ul>
 <li>Designed for social media text (handles slang, emojis, punctuation)</li>
 <li>Lightweight, rule-based, no GPU needed</li>
@@ -624,7 +624,7 @@ analyzer = SentimentIntensityAnalyzer()
 <ol>
 <li><strong>Timestamp Gaps:</strong> The absence of reliable <code>time</code> metadata prevented any analysis of how sentiment evolved during the livestream. Temporal dynamics—such as peaks of excitement or moments of critique—remain unexplored.</li>
 <li><strong>Model Constraints:</strong> Although VADER excels with short, informal text, it can misinterpret sarcasm, irony, or culturally specific idioms, potentially skewing positive or negative counts.</li>
-<li><strong>Sampling Bias:</strong> Our dataset is limited to the first 1,000 most recent comments, which may overrepresent highly engaged fans and underrepresent later or less active viewers.</li>
+<li><strong>Sampling Bias:</strong> The dataset is limited to the first 1,000 most recent comments, which may overrepresent highly engaged fans and underrepresent later or less active viewers.</li>
 <li><strong>Language Coverage:</strong> Non-English comments were included in raw form but processed as English text, possibly diluting sentiment accuracy for multilingual or code-switched entries.</li>
 </ol>
 <h3 id="63-future-work">6.3 Future Work</h3>
@@ -637,12 +637,12 @@ analyzer = SentimentIntensityAnalyzer()
 <hr>
 <h2 id="references">References</h2>
 <ul>
-<li>Hutto, C. J., &amp; Gilbert, E. (no date). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text.
-Proceedings of the International AAAI Conference on Web and Social Media.</li>
+<li>Hutto, C. J., &amp; Gilbert, E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text.
+Proceedings of the International AAAI Conference on Web and Social Media. https://doi.org/10.1609/icwsm.v8i1.14550</li>
 <li>Cunha, A. A. L., Costa, M. C., &amp; Pacheco, M. A. C. (2020). “Sentiment analysis of YouTube video comments using Deep Neural Networks.”
-In Advances in Artificial Intelligence: IEA/AIE 2020 International Workshops.</li>
+In Advances in Artificial Intelligence: IEA/AIE 2020 International Workshops. http://dx.doi.org/10.1007/978-3-030-20912-4_51</li>
 <li>Mikolov, T., et al. (2013). “Efficient Estimation of Word Representations in Vector Space.”
-arXiv:1301.3781.</li>
+arXiv:1301.3781. https://doi.org/10.48550/arXiv.1301.3781</li>
 </ul>
 
 </body>
