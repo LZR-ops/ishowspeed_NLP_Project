@@ -219,9 +219,9 @@ This analysis of 1,000 YouTube comments on IShowSpeed’s Shanghai livestream re
 
 
 ## References
-* Hutto, C. J., & Gilbert, E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text.
-Proceedings of the International AAAI Conference on Web and Social Media. https://doi.org/10.1609/icwsm.v8i1.14550 
 * Cunha, A. A. L., Costa, M. C., & Pacheco, M. A. C. (2020). “Sentiment analysis of YouTube video comments using Deep Neural Networks.”
 In Advances in Artificial Intelligence: IEA/AIE 2020 International Workshops. http://dx.doi.org/10.1007/978-3-030-20912-4_51
+* Hutto, C. J., & Gilbert, E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text.
+Proceedings of the International AAAI Conference on Web and Social Media. https://doi.org/10.1609/icwsm.v8i1.14550 
 * Mikolov, T., et al. (2013). “Efficient Estimation of Word Representations in Vector Space.”
 arXiv:1301.3781. https://doi.org/10.48550/arXiv.1301.3781
