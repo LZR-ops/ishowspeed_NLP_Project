@@ -1,7 +1,7 @@
 # Sentiment Snapshots from IShowSpeed’s China Stream Comments
 
 **Author:** Zerong Lu  
-**Date:** May 07, 2025  
+**Date:** May 15 2025  
 **GitHub:** https://github.com/LZR-ops/ishowspeed_NLP_Project.git 
 ---
 
