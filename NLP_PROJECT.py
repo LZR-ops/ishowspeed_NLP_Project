@@ -18,7 +18,6 @@ os.makedirs(DATA_DIR, exist_ok=True)
 def fetch_comments(video_id: str, max_comments: int = 1000):
     """
     Step 1: Download up to max_comments from YouTube video and save to raw_comments.json.
-    P.S: I do NOT pass sort_by_time here, to avoid the TypeError.
     """
     downloader = YoutubeCommentDownloader()
     comments = []
